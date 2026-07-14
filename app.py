@@ -80,7 +80,7 @@ sns.countplot(
 
 plt.xticks(rotation=45)
 
-st.pyplot(fig)
+st.pyplot(fig, use_container_width=True)
 
 
 
@@ -103,7 +103,7 @@ sns.histplot(
 )
 
 
-st.pyplot(fig)
+st.pyplot(fig, use_container_width=True)
 
 
 
@@ -125,7 +125,7 @@ sns.heatmap(
 )
 
 
-st.pyplot(fig)
+st.pyplot(fig, use_container_width=True)
 
 
 
