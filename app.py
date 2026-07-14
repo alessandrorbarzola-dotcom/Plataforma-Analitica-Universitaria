@@ -7,7 +7,7 @@ import seaborn as sns
 st.set_page_config(
     page_title="Dashboard Analítica Universitaria",
     page_icon="📊",
-    layout="wide"
+    layout="centered"
 )
 
 
@@ -67,7 +67,7 @@ with col2:
 st.header("Congestión por Tipo de Trámite")
 
 
-fig, ax = plt.subplots(figsize=(10,5))
+fig, ax = plt.subplots(figsize=(8,4))
 
 
 sns.countplot(
@@ -91,7 +91,7 @@ st.pyplot(fig, use_container_width=True)
 st.header("Distribución del Número de Solicitudes")
 
 
-fig, ax = plt.subplots(figsize=(10,5))
+fig, ax = plt.subplots(figsize=(8,4))
 
 
 sns.histplot(
@@ -114,7 +114,7 @@ st.pyplot(fig, use_container_width=True)
 st.header("Correlación de Variables")
 
 
-fig, ax = plt.subplots(figsize=(12,8))
+fig, ax = plt.subplots(figsize=(8,5))
 
 
 sns.heatmap(
