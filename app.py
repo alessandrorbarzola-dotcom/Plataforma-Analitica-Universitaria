@@ -19,9 +19,13 @@ st.subheader(
 )
 
 
+# Cargar datos
 df = pd.read_csv("dataset_personal_ETL.csv")
 
+st.write("Columnas del dataset:")
+st.write(df.columns.tolist())
 
-st.write("Vista previa del dataset")
+
+st.header("Vista del Dataset")
 
 st.dataframe(df.head())
